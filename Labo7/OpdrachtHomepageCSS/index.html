@@ -14,7 +14,7 @@
             <li><a href="#persoonlijke-info">Persoonlijke Informatie</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
             <li><a href="#likes">Likes</a></li>
-            <li><a href="#prognose">Prognose</a></li>
+            <li><a href="#vrienden">Vrienden</a></li>
         </ul>
     </nav>
 </header>
@@ -69,44 +69,75 @@
     </ul>
 </section>
 
-<section id="prognose" >
-    <h2>Prognose</h2>
+
+<section id="vrienden" >
+    <h2>vrienden</h2>
+
     <table>
         <thead>
         <tr>
-            <th></th>
-            <th>Aaron</th>
-            <th>Jan</th>
-            <th>Piet</th>
-            <th>Joris</th>
+            <th>Voornaam</th>
+            <th>Familienaam</th>
+            <th>Postcode</th>
+            <th>Email</th>
+            <th>Telefoonnummer</th>
+            <th>Leeftijd</th>
         </tr>
         </thead>
+
         <tbody>
         <tr>
-            <td>Web Development</td>
-            <td>19/20</td>
-            <td>13/20</td>
-            <td>14/20</td>
-            <td>12/20</td>
+            <td>Imaginaire1</td>
+            <td>Vriend1</td>
+            <td>1234 AB</td>
+            <td>imaginaire1@example.com</td>
+            <td class="onbekend">Onbekend</td>
+            <td>25</td>
+        </tr>
+        <tr class="alt">
+            <td>Imaginaire2</td>
+            <td>Vriend2</td>
+            <td class="onbekend">Onbekend</td>
+            <td>imaginaire2@example.com</td>
+            <td>987-654-321</td>
+            <td>30</td>
         </tr>
         <tr>
-            <td>Excel</td>
-            <td>18/20</td>
-            <td>11/20</td>
-            <td>10/20</td>
-            <td>15/20</td>
+            <td>Imaginaire3</td>
+            <td class="onbekend">Onbekend</td>
+            <td>9012 EF</td>
+            <td>imaginaire3@example.com</td>
+            <td>555-555-555</td>
+            <td>22</td>
+        </tr>
+        <tr class="alt">
+            <td>Imaginaire4</td>
+            <td>Vriend4</td>
+            <td>3456 GH</td>
+            <td>imaginaire4@example.com</td>
+            <td>111-222-333</td>
+            <td class="onbekend">Onbekend</td>
         </tr>
         <tr>
-            <td>Problem Solving</td>
-            <td>20/20</td>
-            <td>12/20</td>
-            <td>15/20</td>
-            <td>14/20</td>
+            <td>Imaginaire5</td>
+            <td>Vriend5</td>
+            <td>7890 IJ</td>
+            <td class="onbekend">Onbekend</td>
+            <td>444-555-666</td>
+            <td>35</td>
         </tr>
         </tbody>
     </table>
-</section>
 
+    <h3>Vraag 1: Zijn alle properties die de generator voorziet werkelijk nodig?</h3>
+    <p> <b>Antwoord:</b> Niet alle properties zijn noodzakelijk, ze kunnen wel stijlkenmerken toevoegen aan de tabel. vb: border-radius, text-align, en font helpen bij de visuele weergave en ontwerp van de tabel. </p>
+
+    <h3>Vraag 2: De generator gebruikt voor bepaalde properties een browser prefix. Zijn die voor jouw browser (nog steeds) nodig?</h3>
+    <p><b>Antwoord:</b>Het gebruik van browser prefixes, zoals -webkit- en -moz-, is afhankelijk van de gewenste browserondersteuning. Moderne  (Chrome) tonen de eigenschappen correct zonder prefixes. Voor oudere browsers kan in de meeste gevallen tools zoals autoprefixer gebruiken.</p>
+
+    <h3>Vraag 3: Waarom heeft de volgende CSS regel: .onbekend {background-color:red;} geen effect toepast op een cel in een rij met class="alt" rij zonder deze 'alt' class?</h3>
+     <p><b>Antwoord:</b>De CSS-regel mist specificiteit om de achtergrondkleur in de 'alt'-rijen te overschrijven; dit wordt verholpen door specifieke selectie zoals : table tbody .alt .onbekend </p>
+</section>
 
 <footer>
     <p>Aaron Van Daele</p>
