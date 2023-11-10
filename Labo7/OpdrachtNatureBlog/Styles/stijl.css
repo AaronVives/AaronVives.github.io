@@ -1,0 +1,41 @@
+body {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.hoofd {
+    background-image: url('../Images/header.jpg');
+    background-size: 100% auto;
+    height: 150px;
+}
+
+.hoofd  h1 {
+    color: white;
+    font-size: 50px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #565656;
+    overflow: hidden;
+}
+
+nav a {
+    color: #1dee1c;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+article {
+    background-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+article header h1 {
+    font-size: 30px;
+    text-decoration: underline;
+}
