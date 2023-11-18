@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.column {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
