@@ -15,12 +15,9 @@ article {
     display: table;
 }
 
-h2 {
-    font-size: 1.25em;
-}
-
 p {
     margin: 10px 0;
+    font-size: 1.25em;
 }
 
 article:nth-child(odd) img {
