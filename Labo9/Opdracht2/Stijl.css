@@ -30,7 +30,7 @@ header > p:nth-child(2) {
 header > img{
     position: absolute;
     margin-bottom: 60px;
-    margin-right: 110px;
+    margin-right: 90px;
     top: 30px;
     right: 250px;
 }
@@ -63,18 +63,21 @@ main{
     height: 150px;
     float: left;
     display: inline-block;
-    margin-right: 6em;
-    margin-left: 2em;
-    margin-top: 1em;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .introduction {
     background-color: white;
     color: black;
-    padding: 0px 30px 20px;
+    padding: 20px 30px 20px;
     text-align: justify;
 }
 
+.introduction p{
+    margin: 0px;
+}
 .introduction .logo {
     margin: 20px 0;
 }
