@@ -110,10 +110,8 @@ footer {
     display: inline-block;
 }
 
-.footerleft,
-.footerright {
+.footerblock {
     padding-left: 120px;
-    width: 30%;
     box-sizing: border-box;
     float: left;
 }
