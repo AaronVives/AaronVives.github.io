@@ -29,10 +29,8 @@ header > p:nth-child(2) {
 
 header > img{
     position: absolute;
-    margin-bottom: 60px;
-    margin-right: 90px;
-    top: 30px;
-    right: 250px;
+    top: 60px;
+    right: 90px;
 }
 aside{
     width: 25%;
