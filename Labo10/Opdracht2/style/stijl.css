@@ -8,11 +8,11 @@ body {
     padding: 4px;
 }
 .row div:nth-child(odd) {
-    background-color: #D0D4D9;
+    background-color: #d9dbe0;
 }
 
 .row div:nth-child(even) {
-    background-color: #A3A8AE;
+    background-color: #9c9fa4;
 }
 
 
