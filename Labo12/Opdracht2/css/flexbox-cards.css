@@ -17,9 +17,6 @@ a {
 .container {
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .card {
@@ -66,9 +63,12 @@ a {
 }
 
 .container {
-/* flex-eigenschappen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .card {
-    /* flex-eigenschappen */
+    flex-flow: row wrap;
 }
