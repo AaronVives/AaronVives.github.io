@@ -66,9 +66,5 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-
-.card {
     flex-flow: row wrap;
 }

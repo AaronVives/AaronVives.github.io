@@ -3,6 +3,6 @@ ul li {
     width: 150px;
 }
 
-ul li > a {
+li  a {
     color: red;
 }
