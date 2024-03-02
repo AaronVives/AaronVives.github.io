@@ -9,17 +9,17 @@ const setup = () => {
 }
 
 const update = () => {
-    let red = document.getElementById("redSlider").value;
-    let green = document.getElementById("greenSlider").value;
-    let blue = document.getElementById("blueSlider").value;
+    let red = document.getElementById("color-r").value;
+    let green = document.getElementById("color-g").value;
+    let blue = document.getElementById("color-b").value;
 
-    document.getElementById("redValue").textContent = red;
-    document.getElementById("greenValue").textContent = green;
-    document.getElementById("blueValue").textContent = blue;
+    document.getElementById("label-r").textContent = red;
+    document.getElementById("label-g").textContent = green;
+    document.getElementById("label-b").textContent = blue;
 
     let rgbColor = `rgb(${red}, ${green}, ${blue})`;
 
-    document.querySelector(".colorViewer").style.backgroundColor = rgbColor;
+    document.getElementById("Color").style.backgroundColor = rgbColor;
 }
 
 window.addEventListener("load", setup);

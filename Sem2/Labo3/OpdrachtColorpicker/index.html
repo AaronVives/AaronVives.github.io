@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/index.css">
-    <title>Opdracht ColorPicker</title>
+    <title>Opdracht Colorpicker</title>
 </head>
 <body>
-<section>
-    <div class="container">
-        <div class="slider-container">
-            <label class="slider-label" for="redSlider">Red: <span id="redValue">0</span></label>
-            <input type="range" min="0" max="255" value="0" class="slider" id="redSlider">
-            <label class="slider-label" for="greenSlider">Green: <span id="greenValue">0</span></label>
-            <input type="range" min="0" max="255" value="0" class="slider" id="greenSlider">
-            <label class="slider-label" for="blueSlider">Blue: <span id="blueValue">0</span></label>
-            <input type="range" min="0" max="255" value="0" class="slider" id="blueSlider">
+<div class="color-picker">
+    <div class="Components">
+        <div class="sliders-containers">
+            <div class="sliders">
+                0
+                <input class="slider" id="color-r" type="range" min="0" max="255" step="1" value="0" aria-label="">
+                255
+            </div>
+            <div class="slider">
+                0
+                <input class="slider" id="color-g" type="range" min="0" max="255" step="1" value="0" aria-label="">
+                255
+            </div>
+            <div class="slider">
+                0
+                <input class="slider" id="color-b" type="range" min="0" max="255" step="1" value="0" aria-label="">
+                255
+            </div>
         </div>
-        <div class="colorViewer"></div>
+        <div class="labels">
+            <span class="label">Red: <span id="label-r">0</span> </span>
+            <span class="label">Green: <span id="label-g">0</span> </span>
+            <span class="label">Blue: <span id="label-b">0</span> </span>
+        </div>
     </div>
-</section>
+    <div class="Color" id="Color">
 
+    </div>
+</div>
 <script src="scripts/index.js"></script>
 </body>
 </html>
