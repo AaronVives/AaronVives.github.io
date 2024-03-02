@@ -1,0 +1,12 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+
+table, button {
+    margin: 5px 0;
+}
