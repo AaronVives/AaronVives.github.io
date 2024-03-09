@@ -1,8 +1,17 @@
-const setup = () => {
-    const belangrijkeParagrafen = document.getElementsByClassName('belangrijk');
-    for (let i = 0; i < belangrijkeParagrafen.length; i++) {
-        belangrijkeParagrafen[i].classList.add('opvallend');
-    }
+const initialiseren = () => {
+    const knop = document.getElementById("knop");
+    knop.addEventListener("click", maakMetSpaties);
 }
-
-window.addEventListener("load", setup);
+const maakMetSpaties = () =>{
+    let tekstInvoer = document.getElementById("tekstInvoer").value;
+    let uitvoerWaarde = "";
+    for(let i = 0; i <tekstInvoer.length; i++){
+        if(tekstInvoer.charAt(i) !== " "){
+            uitvoerWaarde += tekstInvoer.charAt(i) + " ";
+        }
+    }
+    console.log(uitvoerWaarde);
+    let uitvoer = document.getElementById("uitvoer");
+    uitvoer.innerHTML = uitvoerWaarde;
+}
+window.addEventListener("load", initialiseren);
