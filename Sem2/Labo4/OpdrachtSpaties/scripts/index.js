@@ -1,17 +1,19 @@
-const initialiseren = () => {
-    const knop = document.getElementById("knop");
-    knop.addEventListener("click", maakMetSpaties);
+const setup = () => {
+    const clickBtn = document.getElementById("clickBtn");
+    clickBtn.addEventListener("click", addSpaces);
 }
-const maakMetSpaties = () =>{
-    let tekstInvoer = document.getElementById("tekstInvoer").value;
-    let uitvoerWaarde = "";
-    for(let i = 0; i <tekstInvoer.length; i++){
-        if(tekstInvoer.charAt(i) !== " "){
-            uitvoerWaarde += tekstInvoer.charAt(i) + " ";
+
+const addSpaces = () =>{
+    let inputField = document.getElementById("inputField").value;
+    let formattedText = "";
+    for(let i = 0; i < inputField.length; i++){
+        if(inputField.charAt(i) !== " "){
+            formattedText += inputField.charAt(i) + " ";
         }
     }
-    console.log(uitvoerWaarde);
-    let uitvoer = document.getElementById("uitvoer");
-    uitvoer.innerHTML = uitvoerWaarde;
+    console.log(formattedText);
+    let output = document.getElementById("result");
+    output.innerHTML = formattedText;
 }
-window.addEventListener("load", initialiseren);
+
+window.addEventListener("load", setup);
