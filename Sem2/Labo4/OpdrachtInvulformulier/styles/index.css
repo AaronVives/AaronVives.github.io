@@ -1,0 +1,8 @@
+label{
+    display: block;
+}
+body{
+    border: black solid 1px;
+    padding: 4px;
+    width: fit-content;
+}
