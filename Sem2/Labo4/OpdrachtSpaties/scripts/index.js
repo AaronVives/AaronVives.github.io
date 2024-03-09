@@ -1,6 +1,6 @@
 const setup = () => {
-    const clickBtn = document.getElementById("clickBtn");
-    clickBtn.addEventListener("click", addSpaces);
+    const Btn = document.getElementById("Btn");
+    Btn.addEventListener("click", addSpaces);
 }
 
 const addSpaces = () =>{
