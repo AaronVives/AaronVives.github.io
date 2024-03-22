@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Opdracht Colorpicker</title>
+    <title>Oefening Colorpicker</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
 </head>
-<body>
-<div class="color-picker">
-    <div class="Components">
-        <div class="sliders-containers">
-            <div class="sliders">
-                0
-                <input class="slider" id="color-r" type="range" min="0" max="255" step="1" value="0" aria-label="">
-                255
-            </div>
-            <div class="slider">
-                0
-                <input class="slider" id="color-g" type="range" min="0" max="255" step="1" value="0" aria-label="">
-                255
-            </div>
-            <div class="slider">
-                0
-                <input class="slider" id="color-b" type="range" min="0" max="255" step="1" value="0" aria-label="">
-                255
-            </div>
-        </div>
-        <div class="labels">
-            <span class="label">Red: <span id="label-r">0</span> </span>
-            <span class="label">Green: <span id="label-g">0</span> </span>
-            <span class="label">Blue: <span id="label-b">0</span> </span>
-        </div>
-    </div>
-    <div class="Color" id="Color">
 
+<body>
+
+<div class="color-picker">
+    <div class="components">
+        <div>
+            <input type="range" min="0" max="255" alt="Red" value="127" id="redSlider" class="sliders"/>
+            <label for="redSlider" id="labelRed"> Red</label>
+            <label for="redSlider" class="value"> 127</label>
+        </div>
+        <div>
+            <input type="range" min="0" max="255" alt="Green" value="127" id="greenSlider" class="sliders"/>
+            <label for="greenSlider" id="labelGreen"> Green</label>
+            <label for="greenSlider" class="value"> 127</label>
+        </div>
+        <div>
+            <input type="range" min="0" max="255" alt="Blue" value="127" id="blueSlider" class="sliders"/>
+            <label for="blueSlider" id="labelBlue"> Blue</label>
+            <label for="blueSlider" class="value"> 127</label>
+        </div>
     </div>
+    <div class="swatch" id="swatch"></div>
+    <label for="savebtn">
+        <input type="button" value="Save" id="savebtn" name="savebtn">
+    </label>
 </div>
 <script src="scripts/index.js"></script>
 </body>

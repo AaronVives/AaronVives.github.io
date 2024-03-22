@@ -1,9 +1,27 @@
 .color-picker {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     border: grey solid 5px;
     border-radius: 10px;
+    align-items: center;
+    max-width: 60%;
+    margin-right: auto;
 }
+
+
+.components {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 40%;
+    margin: 10px 20px;
+}
+
+.sliders_containers {
+    display: flex;
+    flex-direction: column;
+}
+
 .labels {
     display: flex;
     flex-direction: column;
@@ -11,30 +29,35 @@
     margin: 10px 20px;
 }
 
-.label {
-    margin-left: 20px;
-}
-
-.Components {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    max-width: 40%;
-    margin: 10px 20px;
-}
-
-.sliders-containers {
-    display: flex;
-    flex-direction: column;
-}
-
 .slider {
     vertical-align: text-bottom;
 }
 
-.Color {
-    width:100px;
-    height:100px;
-    border:1px solid black;
-    margin: 10px 20px;
+.label {
+    margin-left: 20px;
+}
+
+.swatch {
+    border: #333 solid 2px;
+    border-radius: 4px;
+    min-height: 75px;
+    min-width: 100px;
+    max-width: 40%;
+    margin: 10px 30px;
+}
+
+#stored_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.swatch_saved {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    border: #333 solid 2px;
+    height: 75px;
+    width: 100px;
+    margin: 10px 10px;
 }
