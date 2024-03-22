@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Opdracht - Trigrams</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Opdracht Colorpicker</title>
 </head>
 <body>
-<label for="input">Voer een woord in:</label>
-<input type="text" id="input" placeholder="Voer een woord in">
-    <button id="btn">Maak Trigrams</button>
-<div id="output"></div>
+<div class="color-picker">
+    <div class="Components">
+        <div class="sliders-containers">
+            <div class="sliders">
+                0
+                <input class="slider" id="color-r" type="range" min="0" max="255" step="1" value="0" aria-label="">
+                255
+            </div>
+            <div class="slider">
+                0
+                <input class="slider" id="color-g" type="range" min="0" max="255" step="1" value="0" aria-label="">
+                255
+            </div>
+            <div class="slider">
+                0
+                <input class="slider" id="color-b" type="range" min="0" max="255" step="1" value="0" aria-label="">
+                255
+            </div>
+        </div>
+        <div class="labels">
+            <span class="label">Red: <span id="label-r">0</span> </span>
+            <span class="label">Green: <span id="label-g">0</span> </span>
+            <span class="label">Blue: <span id="label-b">0</span> </span>
+        </div>
+    </div>
+    <div class="Color" id="Color">
 
+    </div>
+</div>
 <script src="scripts/index.js"></script>
 </body>
 </html>

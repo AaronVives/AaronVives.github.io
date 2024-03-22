@@ -1,17 +1,25 @@
 const setup = () => {
-    const btn = document.getElementById("btn");
-    btn.addEventListener("click", trigram);
-}
-const trigram = () => {
-    const input = document.getElementById("input").value.replaceAll(" ", "");
-    const outputField = document.getElementById("output");
-    let outputText = "";
+    let sliders = document.querySelectorAll(".slider");
 
-    for (let i = 0; i < input.length - 2; i++) {
-        const trigram = input.substring(i, i + 3);
-        outputText += trigram + "<br>";
-    }
-    outputField.innerHTML = outputText;
+    sliders.forEach(slider => {
+        slider.addEventListener("input", update);
+    });
+
+    update();
+}
+
+const update = () => {
+    let red = document.getElementById("color-r").value;
+    let green = document.getElementById("color-g").value;
+    let blue = document.getElementById("color-b").value;
+
+    document.getElementById("label-r").textContent = red;
+    document.getElementById("label-g").textContent = green;
+    document.getElementById("label-b").textContent = blue;
+
+    let rgbColor = `rgb(${red}, ${green}, ${blue})`;
+
+    document.getElementById("Color").style.backgroundColor = rgbColor;
 }
 
 window.addEventListener("load", setup);
